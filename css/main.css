@@ -1,0 +1,67 @@
+/* Victoria Ascaso — main.css */
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000;
+  background: #fff;
+  margin: 0;
+  padding: 15px 20px;
+  max-width: 960px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ── Header ───────────────────────────── */
+
+.site-header {
+  margin-bottom: 25px;
+}
+
+/* ── Works index (homepage) ───────────── */
+
+.works-section {
+  margin-top: 5px;
+}
+
+.works-section p {
+  margin: 0 0 2px;
+}
+
+/* ── General page sections ────────────── */
+
+.page-section {
+  margin-top: 5px;
+}
+
+.page-section p {
+  margin: 0 0 8px;
+}
+
+/* ── Individual project pages ─────────── */
+
+.project-image {
+  margin: 15px 0 5px;
+  max-width: 690px;
+}
+
+.project-image figcaption {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
+}
