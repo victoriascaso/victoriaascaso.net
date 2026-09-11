@@ -55,6 +55,7 @@ img {
 
 .works-col p {
   margin: 0 0 2px;
+  font-size:28px;
 }
 
 /* ══════════════════════════════════════
@@ -68,6 +69,7 @@ img {
 
 .project-title p {
   margin: 0;
+  font-size:28px;
 }
 
 /* Centred content column */
