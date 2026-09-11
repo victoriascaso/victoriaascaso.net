@@ -27,37 +27,67 @@ img {
   display: block;
 }
 
-/* ── Header ───────────────────────────── */
+/* ── Header (shared by all pages) ─────── */
 
 .site-header {
   margin-bottom: 25px;
 }
 
-/* ── Works index (homepage) ───────────── */
-
-.works-section {
-  margin-top: 5px;
-}
-
-.works-section p {
+.site-header p {
   margin: 0 0 2px;
 }
 
-/* ── General page sections ────────────── */
+/* ══════════════════════════════════════
+   HOMEPAGE  —  just the nav, no content
+   ══════════════════════════════════════ */
 
-.page-section {
-  margin-top: 5px;
+/* nothing extra needed — body is empty */
+
+/* ══════════════════════════════════════
+   WORKS LIST PAGE  —  left-column layout
+   ══════════════════════════════════════ */
+
+.works-layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
 }
 
-.page-section p {
+.works-col p {
+  margin: 0 0 2px;
+}
+
+/* ══════════════════════════════════════
+   PROJECT PAGES  —  title + centred body
+   ══════════════════════════════════════ */
+
+/* Title that appears below the nav */
+.project-title {
+  margin-bottom: 20px;
+}
+
+.project-title p {
+  margin: 0;
+}
+
+/* Centred content column */
+.project-body {
+  max-width: 690px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project-body p {
   margin: 0 0 8px;
 }
 
-/* ── Individual project pages ─────────── */
+.gap {
+  margin-top: 20px;
+}
 
+/* Images */
 .project-image {
-  margin: 15px 0 5px;
-  max-width: 690px;
+  margin: 15px 0 0;
+  max-width: 100%;
 }
 
 .project-image figcaption {
@@ -71,7 +101,6 @@ img {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
-  max-width: 690px;
   margin: 15px 0 0;
 }
 
@@ -90,7 +119,10 @@ img {
   margin: 4px 0 18px;
 }
 
-/* Section gap inside project pages */
-.gap {
-  margin-top: 20px;
+/* ── Responsive ────────────────────────── */
+
+@media (max-width: 600px) {
+  .works-layout {
+    grid-template-columns: 1fr;
+  }
 }
